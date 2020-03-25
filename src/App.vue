@@ -2,12 +2,14 @@
  * @Description: 
  * @Autor: yllz
  * @Date: 2020-02-08 14:30:55
- * @LastEditors  : yllz
- * @LastEditTime : 2020-02-09 15:17:59
+ * @LastEditors: yll
+ * @LastEditTime: 2020-03-15 18:58:27
  -->
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive exclude="Detail">
+      <router-view></router-view>
+    </keep-alive>
     <main-tab-bar></main-tab-bar>
   </div>
 </template>

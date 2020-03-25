@@ -2,8 +2,8 @@
  * @Description: 
  * @Autor: yllz
  * @Date: 2020-02-09 15:01:52
- * @LastEditors  : yllz
- * @LastEditTime : 2020-02-09 17:01:42
+ * @LastEditors: yll
+ * @LastEditTime: 2020-02-29 14:44:55
  */
 import axios from 'axios'
 
@@ -11,7 +11,7 @@ import axios from 'axios'
 export function request(config) {
   //1.创建axios实例
   const instance = axios.create({
-    baseURL: 'http://123.207.32.32:8000',
+    baseURL: 'http://123.207.32.32:8000/api/wh',
     timeout: 5000
   })
 

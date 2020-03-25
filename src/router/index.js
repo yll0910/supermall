@@ -2,8 +2,8 @@
  * @Description: 
  * @Autor: yllz
  * @Date: 2020-02-09 15:19:27
- * @LastEditors: yllz
- * @LastEditTime: 2020-02-09 15:27:01
+ * @LastEditors: yll
+ * @LastEditTime: 2020-03-15 17:05:31
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -12,6 +12,7 @@ const Home = () => import('../views/home/Home.vue')
 const Cart = () => import('../views/cart/Cart.vue')
 const Category = () => import('../views/category/Category.vue')
 const Profile = () => import('../views/profiles/Profile.vue')
+const Detail = () => import('../views/detail/Detail')
 
 //1.安装插件
 Vue.use(VueRouter)
@@ -37,6 +38,10 @@ const routes = [
   {
     path: '/profile',
     component: Profile
+  },
+  {
+    path: '/detail/:iid',
+    component: Detail
   },
 ]
 const router = new VueRouter({
